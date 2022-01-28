@@ -1,0 +1,61 @@
+{
+    "areas": [
+        {
+            "name": "Overworld",
+            "locations": [
+                {
+                    "name": "Home (middle of mansion)",
+                    "x": -175,
+                    "y": 75,
+                    "z": 240
+                },
+                {
+                    "name": "Woodland Mansion",
+                    "x": -7432,
+                    "y": 65,
+                    "z": -2176
+                },
+                {
+                    "name": "End Stronghold",
+					"x": 1085,
+					"y": 41,
+					"z": -1293
+                },
+                {
+                    "name": "Ocean Monument (unexplored)",
+                    "x": 1718,
+                    "y": 62,
+                    "z": 146
+                }
+            ]
+        },
+        {
+            "name": "The Nether",
+            "locations": [
+                {
+                    "name": "Portal",
+                    "x": -34,
+                    "y": 55,
+                    "z": 18
+                }
+            ]
+        },
+        {
+            "name": "The End",
+            "locations": [
+                {
+                    "name": "Enderman Farm",
+                    "x": 44,
+                    "y": 3,
+                    "z": -185
+                },
+                {
+                    "name": "Middle Podium (get back to Overworld)",
+                    "x": -2,
+                    "y": 61,
+                    "z": -1
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+{
+	"scripts": {
+		"build": "mkdir -p ./build && mustache data.json index.html.mustache build/index.html"
+	},
+	"devDependencies": {
+		"mustache": "^4.2.0"
+	}
+}

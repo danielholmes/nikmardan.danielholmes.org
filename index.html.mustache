@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nik Mar Dan Mansion Crew</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+</head>
+<body>
+	<section class="section">
+    	<div class="container">
+			<h2 class="title">Coordinates</h2>
+			<table class="table">
+			<thead>
+				<tr>
+				<th>Description</th>
+				<th>X</th>
+				<th>Y</th>
+				<th>Z</th>
+				<th>Copy command</th>
+				</tr>
+			</thead>
+			<tbody>
+                {{#areas}}
+                    <tr>
+					    <td colspan="5">
+						    <h3 class="subtitle">{{name}}</h3>
+					    </td>
+				    </tr>
+                    {{#locations}}
+                        <tr>
+                                <td>{{name}}</td>
+                                <td>{{x}}</td>
+                                <td>{{y}}</td>
+                                <td>{{z}}</td>
+                                <td>
+                                        <div class="field has-addons">
+                                                <div class="control is-expanded">
+                                                        <input class="input" type="text" readonly value="/tp {{x}} {{y}} {{z}}" />
+                                                </div>
+                                                <div class="control">
+                                                        <button type="button" class="button is-info is-light copy-teleport">Copy</button>
+                                                </div>
+                                        </div>
+                                </td>
+                        </tr>
+                    {{/locations}}
+                {{/areas}}
+			</tbody>
+			</table>
+		</div>
+	</section>
+	<script>
+		window.addEventListener("load", () => {
+			const buttons = document.querySelectorAll(".copy-teleport");
+			buttons.forEach(button => {
+				const label = button.innerHTML;
+				button.addEventListener("click", (e) => {
+					const field = button.closest(".field");
+					const textField = field.querySelector(".input");
+
+					textField.select();
+  					textField.setSelectionRange(0, 99999); /* For mobile devices */
+					if (navigator && navigator.clipboard && navigator.clipboard.writeText) {
+						navigator.clipboard.writeText(textField.value);
+					} else {
+						document.execCommand('copy');
+					}
+
+					button.innerHTML = "Copied!";
+					button.disabled = true;
+					setTimeout(() => {
+						button.disabled = false;
+						button.innerHTML = label;
+					}, 2000);
+				});
+			});
+		});
+	</script>
+</body>
+</html>
