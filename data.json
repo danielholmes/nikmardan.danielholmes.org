@@ -38,6 +38,18 @@
                     "x": -230,
                     "y": 320,
                     "z": 252
+                },
+                {
+                    "name": "Marni's Village (hands off)",
+                    "x": -5223,
+                    "y": 89,
+                    "z": -1515
+                },
+                {
+                    "name": "Marni's Unbreaking villager",
+                    "x": -5123,
+                    "y": 68,
+                    "z": -1565
                 }
             ]
         },
