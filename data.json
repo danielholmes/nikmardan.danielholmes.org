@@ -17,9 +17,15 @@
                 },
                 {
                     "name": "End Stronghold",
-					"x": 1085,
+                    "x": 1085,
 					"y": 41,
 					"z": -1293
+                },
+                {
+                    "name": "End Stronghold (portal to end)",
+                    "x": 1085,
+                    "y": 42, 
+                    "z": -1297
                 },
                 {
                     "name": "Ocean Monument (unexplored)",
