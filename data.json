@@ -128,5 +128,115 @@
                 }
             ]
         }
+    ],
+    "enchantments": [
+        {
+            "id": "aquaAffinity",
+            "name": "Aqua Affinity",
+            "maxLevel": "I",
+            "maxTableLevel": "I"
+        },
+        {
+            "id": "baneOfArthropods",
+            "name": "Bane of Arthropods",
+            "maxLevel": "V",
+            "maxTableLevel": "IV",
+            "incompatible": [
+                "smite",
+                "sharpness"
+            ]
+        },
+        {
+            "id": "blastProtection",
+            "name": "Blast Protection",
+            "maxLevel": "IV",
+            "maxTableLevel": "IV",
+            "incompatible": [
+                "protection",
+                "fireProtection",
+                "projectileProtection",
+                "featherFalling"
+            ]
+        },
+        {
+            "id": "chanelling",
+            "name": "Chanelling",
+            "maxLevel": "I",
+            "maxTableLevel": "I"
+        },
+        {
+            "id": "depthStrider",
+            "name": "Depth Strider",
+            "maxLevel": "III",
+            "maxTableLevel": "III",
+            "incompatible": [
+                "frostWalker"
+            ]
+        },
+        {
+            "id": "efficiency",
+            "name": "Efficiency",
+            "maxLevel": "V",
+            "maxTableLevel": "IV"
+        },
+        {
+            "id": "featherFalling",
+            "name": "Feather falling",
+            "maxLevel": "IV",
+            "maxTableLevel": "IV",
+            "incompatible": [
+                "protection",
+                "fireProtection",
+                "projectileProtection",
+                "blastProtection"
+            ]
+        },
+        {
+            "id": "fireAspect",
+            "name": "Fire aspect",
+            "maxLevel": "II",
+            "maxTableLevel": "II"
+        },
+        {
+            "id": "fireProtection",
+            "name": "Fire Protection",
+            "maxLevel": "IV",
+            "maxTableLevel": "IV",
+            "incompatible": [
+                "protection",
+                "blastProjection",
+                "projectileProtection",
+                "featherFalling"
+            ]
+        },
+        {
+            "id": "flame",
+            "name": "Flame",
+            "maxLevel": "I",
+            "maxTableLevel": "I"
+        },
+        {
+            "id": "frostWalker",
+            "name": "Frost walker",
+            "maxLevel": "II",
+            "incompatible": [
+                "depthStrider"
+            ]
+        },
+        {
+            "id": "fortune",
+            "name": "Fortune",
+            "maxLevel": "III",
+            "maxTableLevel": "III",
+            "incompatible": [
+                "silkTouch"
+            ]
+        },
+        {
+            "id": "impaling",
+            "name": "Impaling",
+            "maxLevel": "V",
+            "maxTableLevel": "IV"
+        }
     ]
 }

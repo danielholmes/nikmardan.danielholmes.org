@@ -50,6 +50,38 @@
 			</table>
 		</div>
 	</section>
+	<section class="section">
+    	<div class="container">
+			<h2 class="title">Enchantments</h2>
+			<table class="table">
+			<thead>
+				<tr>
+				<th>Name</th>
+				<th>Max level</th>
+				<th>Max table level</th>
+				<th>Incompatible with</th>
+				</tr>
+			</thead>
+			<tbody>
+                {{#enchantments}}
+				<tr>
+				<td>{{name}}</td>
+				<td>{{maxLevel}}</td>
+				<td>
+					{{#maxTableLevel}}{{maxTableLevel}}{{/maxTableLevel}}
+					{{^maxTableLevel}}<em>Treasure enchantment</em>{{/maxTableLevel}}
+				</td>
+				<td>
+					{{#incompatible}}
+						<span class="tag is-dark">{{.}}</span>
+					{{/incompatible}}
+				</td>
+				</tr>
+                {{/enchantments}}
+			</tbody>
+			</table>
+		</div>
+	</section>
 	<script>
 		window.addEventListener("load", () => {
 			const buttons = document.querySelectorAll(".copy-teleport");
