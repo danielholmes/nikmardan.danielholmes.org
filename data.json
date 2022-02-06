@@ -68,6 +68,30 @@
                     "x": -888,
                     "y": 77,
                     "z": -3287
+                },
+                {
+                    "name": "Village o' Fletchers",
+                    "x": -4906,
+                    "y": 64,
+                    "z": -1944
+                },
+                {
+                   "name": "New spruce village",
+                   "x": 2258,
+                   "y": 63,
+                   "z": -235
+                },
+                {
+                   "name": "New spruce village AGAIN",
+                   "x": 2328,
+                   "y": 72,
+                   "z": 786
+                },
+                {
+                   "name": "LUSH CAVE",
+                   "x": 2253,
+                   "y": 47,
+                   "z": 914
                 }
             ]
         },
