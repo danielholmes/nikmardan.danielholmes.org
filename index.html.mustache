@@ -123,22 +123,30 @@
 
 			const worldTabs = document.querySelectorAll(".tabs a");
 			const coordinatesContainers = document.querySelectorAll(".coordinates-container");
-			worldTabs.forEach(link => {
-				link.onClick = (e) => {
-					console.logG("On click", e.currentTarget.data);
-				}
-			});
 
 			// Active tab
-			function updateActiveTab() {
-				let activeSlug = worldTabs[0].dataset.slug;
-				if (window.location.hash.startsWith("#world-")) {
-					const potentialSlug = window.location.hash.substring("#world-".length);
-					const potentialTab = Array.from(worldTabs).find(tab => tab.dataset.slug === potentialSlug);
-					if (potentialTab) {
-						activeSlug = potentialTab.dataset.slug;
-					}
+			const activeWorldKey = "activeWorld";
+			function goToDefaultHash() {
+				const defaultSlug = window.localStorage.getItem(activeWorldKey) ?? worldTabs[0].dataset.slug;
+				window.location.hash = `#world-${defaultSlug}`;
+				onHashChange();
+			}
+
+			function onHashChange() {
+				if (!window.location.hash.startsWith("#world-")) {
+					goToDefaultHash();
+					return;
 				}
+
+				const potentialSlug = window.location.hash.substring("#world-".length);
+				const potentialTab = Array.from(worldTabs).find(tab => tab.dataset.slug === potentialSlug);
+				if (!potentialTab) {
+					goToDefaultHash();
+					return;
+				}
+
+				// Apply it
+				const activeSlug = potentialTab.dataset.slug;
 				worldTabs.forEach(t => {
 					if (t.dataset.slug === activeSlug) {
 						t.parentNode.classList.add("is-active");
@@ -153,9 +161,10 @@
 						c.style.display = "none";
 					}
 				});
+				window.localStorage.setItem(activeWorldKey, activeSlug);
 			}
-			window.onhashchange = updateActiveTab;
-			updateActiveTab();
+			window.addEventListener("hashchange", onHashChange);
+			onHashChange();
 		});
 	</script>
 </body>
