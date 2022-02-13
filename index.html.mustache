@@ -3,52 +3,65 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Nik Mar Dan Mansion Crew</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+	<title>Nik Mar Dan Minecraft</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 </head>
 <body>
 	<section class="section">
-    	<div class="container">
+		<div class="container">
 			<h2 class="title">Coordinates</h2>
-			<table class="table">
-			<thead>
-				<tr>
-				<th>Description</th>
-				<th>X</th>
-				<th>Y</th>
-				<th>Z</th>
-				<th>Copy command</th>
-				</tr>
-			</thead>
-			<tbody>
-                {{#areas}}
-                    <tr>
-					    <td colspan="5">
-						    <h3 class="subtitle">{{name}}</h3>
-					    </td>
-				    </tr>
-                    {{#locations}}
-                        <tr>
-                                <td>{{name}}</td>
-                                <td>{{x}}</td>
-                                <td>{{y}}</td>
-                                <td>{{z}}</td>
-                                <td>
-                                        <div class="field has-addons">
-                                                <div class="control is-expanded">
-                                                        <input class="input" type="text" readonly value="/tp {{x}} {{y}} {{z}}" />
-                                                </div>
-                                                <div class="control">
-                                                        <button type="button" class="button is-info is-light copy-teleport">Copy</button>
-                                                </div>
-                                        </div>
-                                </td>
-                        </tr>
-                    {{/locations}}
-                {{/areas}}
-			</tbody>
-			</table>
+			<div class="tabs is-boxed is-large">
+				<ul>
+					{{#worlds}}
+					<li>
+						<a id="tab-{{slug}}" href="#world-{{slug}}" data-slug="{{slug}}">{{name}}</a>
+					</li>
+					{{/worlds}}
+				</ul>
+			</div>
 		</div>
+		{{#worlds}}
+			<div id="coordinates-{{slug}}" data-slug="{{slug}}" class="coordinates-container container">
+				<table class="table">
+				<thead>
+					<tr>
+					<th>Description</th>
+					<th>X</th>
+					<th>Y</th>
+					<th>Z</th>
+					<th>Copy command</th>
+					</tr>
+				</thead>
+				<tbody>
+					{{#dimensions}}
+						<tr>
+							<td colspan="5">
+								<h3 class="subtitle">{{name}}</h3>
+							</td>
+						</tr>
+						{{#locations}}
+							<tr>
+									<td>{{name}}</td>
+									<td>{{x}}</td>
+									<td>{{y}}</td>
+									<td>{{z}}</td>
+									<td>
+											<div class="field has-addons">
+													<div class="control is-expanded">
+															<input class="input" type="text" readonly value="/tp {{x}} {{y}} {{z}}" />
+													</div>
+													<div class="control">
+															<button type="button" class="button is-info is-light copy-teleport">Copy</button>
+													</div>
+											</div>
+									</td>
+							</tr>
+						{{/locations}}
+					{{/dimensions}}
+				</tbody>
+				</table>
+			</div>
+		{{/worlds}}
 	</section>
 	<section class="section">
     	<div class="container">
@@ -107,6 +120,42 @@
 					}, 2000);
 				});
 			});
+
+			const worldTabs = document.querySelectorAll(".tabs a");
+			const coordinatesContainers = document.querySelectorAll(".coordinates-container");
+			worldTabs.forEach(link => {
+				link.onClick = (e) => {
+					console.logG("On click", e.currentTarget.data);
+				}
+			});
+
+			// Active tab
+			function updateActiveTab() {
+				let activeSlug = worldTabs[0].dataset.slug;
+				if (window.location.hash.startsWith("#world-")) {
+					const potentialSlug = window.location.hash.substring("#world-".length);
+					const potentialTab = Array.from(worldTabs).find(tab => tab.dataset.slug === potentialSlug);
+					if (potentialTab) {
+						activeSlug = potentialTab.dataset.slug;
+					}
+				}
+				worldTabs.forEach(t => {
+					if (t.dataset.slug === activeSlug) {
+						t.parentNode.classList.add("is-active");
+					} else {
+						t.parentNode.classList.remove("is-active");
+					}
+				});
+				coordinatesContainers.forEach(c => {
+					if (c.dataset.slug === activeSlug) {
+						c.style.display = "block";
+					} else {
+						c.style.display = "none";
+					}
+				});
+			}
+			window.onhashchange = updateActiveTab;
+			updateActiveTab();
 		});
 	</script>
 </body>

@@ -1,290 +1,306 @@
 {
-    "areas": [
+    "worlds": [
         {
-            "name": "Overworld",
-            "locations": [
+            "name": "Deuce",
+            "slug": "deuce",
+            "dimensions": [
                 {
-                    "name": "Home (middle of mansion)",
-                    "x": -175,
-                    "y": 75,
-                    "z": 240
-                },
-                {
-                    "name": "Woodland Mansion",
-                    "x": -7432,
-                    "y": 65,
-                    "z": -2176
-                },
-                {
-                    "name": "End Stronghold",
-                    "x": 1085,
-					"y": 41,
-					"z": -1293
-                },
-                {
-                    "name": "End Stronghold (portal to end)",
-                    "x": 1085,
-                    "y": 42, 
-                    "z": -1297
-                },
-                {
-                    "name": "Ocean Monument (unexplored)",
-                    "x": 1718,
-                    "y": 62,
-                    "z": 146
-                },
-                {
-                    "name": "Drowned spawner",
-                    "x": -4707,
-                    "y": 63,
-                    "z": -1885
-                },
-                {
-                    "name": "Big Tower (caves and cliffs achievement)",
-                    "x": -230,
-                    "y": 320,
-                    "z": 252
-                },
-                {
-                    "name": "Marni's Village (hands off)",
-                    "x": -5223,
-                    "y": 89,
-                    "z": -1515
-                },
-                {
-                    "name": "Marni's Unbreaking villager",
-                    "x": -5123,
-                    "y": 68,
-                    "z": -1565
-                },
-                {
-                    "name": "Unexplored Cavern",
-                    "x": -5382,
-                    "y": 118,
-                    "z": -1430
-                },
-                {
-                    "name": "Some coords Marni gave (maybe beehive)",
-                    "x": -888,
-                    "y": 77,
-                    "z": -3287
-                },
-                {
-                    "name": "Village o' Fletchers",
-                    "x": -4906,
-                    "y": 64,
-                    "z": -1944
-                },
-                {
-                   "name": "New spruce village",
-                   "x": 2258,
-                   "y": 63,
-                   "z": -235
-                },
-                {
-                   "name": "New spruce village AGAIN",
-                   "x": 2328,
-                   "y": 72,
-                   "z": 786
-                },
-                {
-                   "name": "LUSH CAVE",
-                   "x": 2253,
-                   "y": 47,
-                   "z": 914
-                },
-                {
-                   "name": "Silk touch villager",
-                   "x": 2329,
-                   "y": 72,
-                   "z": 768
-                },
-                {
-                   "name": "New ice village",
-                   "x": -2994,
-                   "y": 65,
-                   "z": -393
+                    "name": "Overworld",
+                    "locations": []
                 }
             ]
         },
         {
-            "name": "Overworld (villages)",
-            "locations": [
+            "name": "Mansion",
+            "slug": "mansion",
+            "dimensions": [
                 {
-                    "name": "Raid town + Fletcher",
-                    "x": -3704,
-                    "y": 69,
-                    "z": -2662
+                    "name": "Overworld",
+                    "locations": [
+                        {
+                            "name": "Home (middle of mansion)",
+                            "x": -175,
+                            "y": 75,
+                            "z": 240
+                        },
+                        {
+                            "name": "Woodland Mansion",
+                            "x": -7432,
+                            "y": 65,
+                            "z": -2176
+                        },
+                        {
+                            "name": "End Stronghold",
+                            "x": 1085,
+                            "y": 41,
+                            "z": -1293
+                        },
+                        {
+                            "name": "End Stronghold (portal to end)",
+                            "x": 1085,
+                            "y": 42, 
+                            "z": -1297
+                        },
+                        {
+                            "name": "Ocean Monument (unexplored)",
+                            "x": 1718,
+                            "y": 62,
+                            "z": 146
+                        },
+                        {
+                            "name": "Drowned spawner",
+                            "x": -4707,
+                            "y": 63,
+                            "z": -1885
+                        },
+                        {
+                            "name": "Big Tower (caves and cliffs achievement)",
+                            "x": -230,
+                            "y": 320,
+                            "z": 252
+                        },
+                        {
+                            "name": "Marni's Village (hands off)",
+                            "x": -5223,
+                            "y": 89,
+                            "z": -1515
+                        },
+                        {
+                            "name": "Marni's Unbreaking villager",
+                            "x": -5123,
+                            "y": 68,
+                            "z": -1565
+                        },
+                        {
+                            "name": "Unexplored Cavern",
+                            "x": -5382,
+                            "y": 118,
+                            "z": -1430
+                        },
+                        {
+                            "name": "Some coords Marni gave (maybe beehive)",
+                            "x": -888,
+                            "y": 77,
+                            "z": -3287
+                        },
+                        {
+                            "name": "Village o' Fletchers",
+                            "x": -4906,
+                            "y": 64,
+                            "z": -1944
+                        },
+                        {
+                        "name": "New spruce village",
+                        "x": 2258,
+                        "y": 63,
+                        "z": -235
+                        },
+                        {
+                        "name": "New spruce village AGAIN",
+                        "x": 2328,
+                        "y": 72,
+                        "z": 786
+                        },
+                        {
+                        "name": "LUSH CAVE",
+                        "x": 2253,
+                        "y": 47,
+                        "z": 914
+                        },
+                        {
+                        "name": "Silk touch villager",
+                        "x": 2329,
+                        "y": 72,
+                        "z": 768
+                        },
+                        {
+                        "name": "New ice village",
+                        "x": -2994,
+                        "y": 65,
+                        "z": -393
+                        }
+                    ]
                 },
                 {
-                    "name": "Village o' Fletcher",
-                    "x": -5057,
-                    "y": 77,
-                    "z": -1897
+                    "name": "Overworld (villages)",
+                    "locations": [
+                        {
+                            "name": "Raid town + Fletcher",
+                            "x": -3704,
+                            "y": 69,
+                            "z": -2662
+                        },
+                        {
+                            "name": "Village o' Fletcher",
+                            "x": -5057,
+                            "y": 77,
+                            "z": -1897
+                        },
+                        {
+                            "name": "Librarian # 1",
+                            "x": 1924,
+                            "y": 64,
+                            "z": 1925
+                        },
+                        {
+                            "name": "Librarian # 2",
+                            "x": -3717,
+                            "y": 64,
+                            "z": -2671
+                        }
+                    ]
                 },
                 {
-                    "name": "Librarian # 1",
-                    "x": 1924,
-                    "y": 64,
-                    "z": 1925
+                    "name": "The Nether",
+                    "locations": [
+                        {
+                            "name": "Portal",
+                            "x": -34,
+                            "y": 55,
+                            "z": 18
+                        },
+                        {
+                            "name": "Blaze Spawner / Nether Fortress 2",
+                            "x": -1669,
+                            "y": 81,
+                            "z": -135
+                        },
+                        {
+                            "name": "Nik's Netherite Mine",
+                            "x": -640,
+                            "y": 36,
+                            "z": -182
+                        }
+                    ]
                 },
                 {
-                    "name": "Librarian # 2",
-                    "x": -3717,
-                    "y": 64,
-                    "z": -2671
+                    "name": "The End",
+                    "locations": [
+                        {
+                            "name": "Enderman Farm",
+                            "x": 44,
+                            "y": 3,
+                            "z": -185
+                        },
+                        {
+                            "name": "Middle Podium (get back to Overworld)",
+                            "x": -2,
+                            "y": 61,
+                            "z": -1
+                        }
+                    ]
+                }
+            ],
+            "enchantments": [
+                {
+                    "id": "aquaAffinity",
+                    "name": "Aqua Affinity",
+                    "maxLevel": "I",
+                    "maxTableLevel": "I"
+                },
+                {
+                    "id": "baneOfArthropods",
+                    "name": "Bane of Arthropods",
+                    "maxLevel": "V",
+                    "maxTableLevel": "IV",
+                    "incompatible": [
+                        "smite",
+                        "sharpness"
+                    ]
+                },
+                {
+                    "id": "blastProtection",
+                    "name": "Blast Protection",
+                    "maxLevel": "IV",
+                    "maxTableLevel": "IV",
+                    "incompatible": [
+                        "protection",
+                        "fireProtection",
+                        "projectileProtection",
+                        "featherFalling"
+                    ]
+                },
+                {
+                    "id": "channeling",
+                    "name": "Channeling",
+                    "maxLevel": "I",
+                    "maxTableLevel": "I"
+                },
+                {
+                    "id": "depthStrider",
+                    "name": "Depth Strider",
+                    "maxLevel": "III",
+                    "maxTableLevel": "III",
+                    "incompatible": [
+                        "frostWalker"
+                    ]
+                },
+                {
+                    "id": "efficiency",
+                    "name": "Efficiency",
+                    "maxLevel": "V",
+                    "maxTableLevel": "IV"
+                },
+                {
+                    "id": "featherFalling",
+                    "name": "Feather falling",
+                    "maxLevel": "IV",
+                    "maxTableLevel": "IV",
+                    "incompatible": [
+                        "protection",
+                        "fireProtection",
+                        "projectileProtection",
+                        "blastProtection"
+                    ]
+                },
+                {
+                    "id": "fireAspect",
+                    "name": "Fire aspect",
+                    "maxLevel": "II",
+                    "maxTableLevel": "II"
+                },
+                {
+                    "id": "fireProtection",
+                    "name": "Fire Protection",
+                    "maxLevel": "IV",
+                    "maxTableLevel": "IV",
+                    "incompatible": [
+                        "protection",
+                        "blastProjection",
+                        "projectileProtection",
+                        "featherFalling"
+                    ]
+                },
+                {
+                    "id": "flame",
+                    "name": "Flame",
+                    "maxLevel": "I",
+                    "maxTableLevel": "I"
+                },
+                {
+                    "id": "frostWalker",
+                    "name": "Frost walker",
+                    "maxLevel": "II",
+                    "incompatible": [
+                        "depthStrider"
+                    ]
+                },
+                {
+                    "id": "fortune",
+                    "name": "Fortune",
+                    "maxLevel": "III",
+                    "maxTableLevel": "III",
+                    "incompatible": [
+                        "silkTouch"
+                    ]
+                },
+                {
+                    "id": "impaling",
+                    "name": "Impaling",
+                    "maxLevel": "V",
+                    "maxTableLevel": "IV"
                 }
             ]
-        },
-        {
-            "name": "The Nether",
-            "locations": [
-                {
-                    "name": "Portal",
-                    "x": -34,
-                    "y": 55,
-                    "z": 18
-                },
-                {
-                    "name": "Blaze Spawner / Nether Fortress 2",
-                    "x": -1669,
-                    "y": 81,
-                    "z": -135
-                },
-                {
-                    "name": "Nik's Netherite Mine",
-                    "x": -640,
-                    "y": 36,
-                    "z": -182
-                }
-            ]
-        },
-        {
-            "name": "The End",
-            "locations": [
-                {
-                    "name": "Enderman Farm",
-                    "x": 44,
-                    "y": 3,
-                    "z": -185
-                },
-                {
-                    "name": "Middle Podium (get back to Overworld)",
-                    "x": -2,
-                    "y": 61,
-                    "z": -1
-                }
-            ]
-        }
-    ],
-    "enchantments": [
-        {
-            "id": "aquaAffinity",
-            "name": "Aqua Affinity",
-            "maxLevel": "I",
-            "maxTableLevel": "I"
-        },
-        {
-            "id": "baneOfArthropods",
-            "name": "Bane of Arthropods",
-            "maxLevel": "V",
-            "maxTableLevel": "IV",
-            "incompatible": [
-                "smite",
-                "sharpness"
-            ]
-        },
-        {
-            "id": "blastProtection",
-            "name": "Blast Protection",
-            "maxLevel": "IV",
-            "maxTableLevel": "IV",
-            "incompatible": [
-                "protection",
-                "fireProtection",
-                "projectileProtection",
-                "featherFalling"
-            ]
-        },
-        {
-            "id": "channeling",
-            "name": "Channeling",
-            "maxLevel": "I",
-            "maxTableLevel": "I"
-        },
-        {
-            "id": "depthStrider",
-            "name": "Depth Strider",
-            "maxLevel": "III",
-            "maxTableLevel": "III",
-            "incompatible": [
-                "frostWalker"
-            ]
-        },
-        {
-            "id": "efficiency",
-            "name": "Efficiency",
-            "maxLevel": "V",
-            "maxTableLevel": "IV"
-        },
-        {
-            "id": "featherFalling",
-            "name": "Feather falling",
-            "maxLevel": "IV",
-            "maxTableLevel": "IV",
-            "incompatible": [
-                "protection",
-                "fireProtection",
-                "projectileProtection",
-                "blastProtection"
-            ]
-        },
-        {
-            "id": "fireAspect",
-            "name": "Fire aspect",
-            "maxLevel": "II",
-            "maxTableLevel": "II"
-        },
-        {
-            "id": "fireProtection",
-            "name": "Fire Protection",
-            "maxLevel": "IV",
-            "maxTableLevel": "IV",
-            "incompatible": [
-                "protection",
-                "blastProjection",
-                "projectileProtection",
-                "featherFalling"
-            ]
-        },
-        {
-            "id": "flame",
-            "name": "Flame",
-            "maxLevel": "I",
-            "maxTableLevel": "I"
-        },
-        {
-            "id": "frostWalker",
-            "name": "Frost walker",
-            "maxLevel": "II",
-            "incompatible": [
-                "depthStrider"
-            ]
-        },
-        {
-            "id": "fortune",
-            "name": "Fortune",
-            "maxLevel": "III",
-            "maxTableLevel": "III",
-            "incompatible": [
-                "silkTouch"
-            ]
-        },
-        {
-            "id": "impaling",
-            "name": "Impaling",
-            "maxLevel": "V",
-            "maxTableLevel": "IV"
         }
     ]
 }
